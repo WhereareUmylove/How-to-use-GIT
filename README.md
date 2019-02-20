@@ -8,6 +8,7 @@
   然后在C:\Users\student（你的用户名）下会找到一个.ssh文件夹，点击进入，会有id_rsa和id_rsa.pub这两个文件，右击记事本打开id_rsa.pub，复制里面的全部内容，登录Github，找到右上角的图标，打开点进里面的Settings，再选中里面的SSH and GPG KEYS，点击右上角的New SSH key，然后Title里面随便填，再把刚才id_rsa.pub里面的内容复制到Title下面的Key内容框里面，最后点击Add SSH key。</p>
   <p>至此，你的计算机和github账户就建立了一个连接，换电脑需要重新添加公钥。（当然首先你得有一个github账户，直接访问github的官网然后sign up即可，就不给链接了直接baidu搜索github官网就可以了）</p>
 <b>git上传项目到github账户</b>
+<img src="QQ图片20190220160858.png"/>
 <p>进入你需要上传的项目的根目录（必须是要上传的项目的根目录下），右击-git bash，以下是一系列的命令行语句：
 <p>git config --global user.name "你的github用户名"</p>
 <p>git config --global user.email "你的github账户邮箱"git init </p>
@@ -24,6 +25,7 @@
 <p>github删除文件这里呢有一个坑，很多人可能都和我一开始一样，直接在项目里删除不需要的或者误上传的文件，然后执行git add， git commit，git push一系列的操作，但是结果会是上传失败，为什么呢？原因和之前我们需要进行pull操作是一个，因为github仓库上的文件你本地没有，他就会让你进行pull操作，但是删掉的文件就又会被pull下来，白删了，删文件也是需要用命令行语句删的：git rm "需要删除的文件名"git push origin master
 </p><p>github更新文件比如你修改了一些文件，<b>git status</b> （查看文件状态，这时下面会出现红色的提示  modified 你修改了的文件）git add "你修改了的文件名"（这时你再git status就会发现之前红色的字变成了绿色）<b>git commit  -m "注释信息"git push origin master</b>
 </p>
+<img src="QQ图片20190220160927.png"/>
 <b>git 从远程仓库拉取代码</b>
 <p>git clone + 远程项目地址（HTTP地址或SSH地址）</p>
 <p>例如：git clone git@git.test.net/self_desigin.git</p>
