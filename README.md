@@ -23,7 +23,7 @@
 <p>git remote add origin 仓库地址</p>
 <p>仓库地址就是右边展开的那个，.git结尾的。<b>git pull --rebase origin master</b> （这个操作是把你github项目上的文件拉到本地，如果github上的文件本地没有，本地文件是无法push上去的，现在你的仓库里有一个README文件，所以要先下拉到本地才能执行上传操作，执行完以后你本地应该是有一个README.md的）git push origin master至此全部结束。</p>
 <p>github删除文件这里呢有一个坑，很多人可能都和我一开始一样，直接在项目里删除不需要的或者误上传的文件，然后执行git add， git commit，git push一系列的操作，但是结果会是上传失败，为什么呢？原因和之前我们需要进行pull操作是一个，因为github仓库上的文件你本地没有，他就会让你进行pull操作，但是删掉的文件就又会被pull下来，白删了，删文件也是需要用命令行语句删的：git rm "需要删除的文件名"git push origin master
-</p><p>github更新文件比如你修改了一些文件，<b>git status</b> （查看文件状态，这时下面会出现红色的提示  modified 你修改了的文件）git add "你修改了的文件名"（这时你再git status就会发现之前红色的字变成了绿色）<b>git commit  -m "注释信息"git push origin master</b>
+</p><p>github更新文件比如你修改了一些文件，<b>git status</b> （查看文件状态，这时下面会出现红色的提示  modified 你修改了的文件）git add "你修改了的文件名"（这时你再git status就会发现之前红色的字变成了绿色）<b><p>git commit  -m "注释信息"</p><p>git push origin master</p></b>
 </p>
 <img src="QQ图片20190220160927.png"/>
 <b>git 从远程仓库拉取代码</b>
