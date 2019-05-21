@@ -32,3 +32,9 @@
 <p>‘git@git.test.net/self_desigin.git’为SSH地址；</p>
 <p>注：如果想拉去远程库的项目代码，是不需要事先创建好文件名，比如你本地的站点为WWW,你只需到该目录下，执行
 <b>git clone git@git.test.net/self_desigin.git</b></p>
+<br/>
+<p>删除原来远程仓库  新增某一仓库</p>
+<p>git remote add origin git@github.com:Remember/text.git</p>
+<br/>
+<p>查看版本差异</p>
+<p>git dif</p>
