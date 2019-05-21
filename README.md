@@ -33,8 +33,11 @@
 <p>注：如果想拉去远程库的项目代码，是不需要事先创建好文件名，比如你本地的站点为WWW,你只需到该目录下，执行
 <b>git clone git@git.test.net/self_desigin.git</b></p>
 <br/>
-<p>删除原来远程仓库  新增某远程仓库</p>
-<p>git remote add origin git@github.com:Remember/text.git</p>
+<p>修改本地连接的远程仓库地址</p>
+<p>git remote origin set-url [url]</p>
 <br/>
+<p>一下是删除远程仓库连接和增加新的连接</p>
+<p>git remote rm origin</p>
+<p>git remote add origin [url]</p>
 <p>查看版本差异</p>
 <p>git dif</p>
